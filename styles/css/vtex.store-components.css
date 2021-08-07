@@ -1,0 +1,37 @@
+.infoCardTextContainer {
+  background-color: rgba(250, 235, 215, 0.877);
+  height: 100%;
+}
+
+.infoCardHeadline {
+  font-family: serif;
+  font-size: 2.25rem;
+  color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 24px;
+  border-radius: 5px;
+}
+
+.infoCardCallActionContainer :global(.vtex-button) {
+  color: white;
+  background-color: gray;
+  border: transparent;
+  transition: all 0.3s;
+}
+
+.infoCardCallActionContainer :global(.vtex-button):hover {
+  color: gray;
+  background-color: white;
+  border: transparent;
+}
+
+.infoCardContainer {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.infoCardContainer--button-left {
+  background-color: #edcfd1;
+}
