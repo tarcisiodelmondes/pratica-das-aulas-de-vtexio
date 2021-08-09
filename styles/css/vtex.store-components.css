@@ -1,3 +1,7 @@
 .searchBarContainer {
   margin: auto;
 }
+
+.imageElement--cover {
+  object-fit: cover;
+}

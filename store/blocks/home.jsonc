@@ -1,46 +1,29 @@
 {
   "store.home": {
-    "blocks": [
-      "rich-text#test-1",
-      "info-card#button-right",
-      "info-card#button-left"
-    ]
+    "blocks": ["stack-layout#cta"]
+  },
+  "stack-layout#cta": {
+    "children": ["image#cta", "link#cta"]
   },
 
-  "rich-text#test-1": {
+  "image#cta": {
     "props": {
-      "text": "Hello world",
-      "textPosition": "CENTER",
-      "textAlignment": "CENTER",
-      "font": "t-heading-1"
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 400,
+      "src": "https://appliancetheme.vtexassets.com/assets/app/src/appliancecat___1b7592b49667c6a89203a0997e06bc87.jpg"
     }
   },
 
-  "info-card#button-left": {
+  "link#cta": {
     "props": {
-      "isFullModeStyle": false,
-      "headline": "Shining chrome",
-      "callToActionText": "Go to Collection",
-      "callToActionMode": "button",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until December 2020.",
-      "textPosition": "left",
-      "textAlignment": "center",
-      "blockClass": "button-left"
-    }
-  },
-
-  "info-card#button-right": {
-    "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "href": "/washer",
+      "label": "Check these awesome discounts"
     }
   }
 }
